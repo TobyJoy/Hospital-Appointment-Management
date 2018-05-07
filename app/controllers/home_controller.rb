@@ -7,7 +7,7 @@ class HomeController < ApplicationController
   def sessions_create
     response = RestClient::Request.execute(
       method: :post,
-      url: "localhost:3002/sessions.json?email=#{params[:sign_in][:email]}&password=#{params[:sign_in][:password]}"
+      url: "https://thawing-inlet-92111.herokuapp.com/sessions.json?email=#{params[:sign_in][:email]}&password=#{params[:sign_in][:password]}"
      )
 
      if !response.blank?
