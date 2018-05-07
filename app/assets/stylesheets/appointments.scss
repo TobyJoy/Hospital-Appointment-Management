@@ -1,0 +1,86 @@
+// Place all the styles related to the appointments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+select{
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    width: 100%;
+    margin-bottom: 10px;
+    background: white;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.btn-warning {
+  float: right;
+  min-width: 130px;
+  color: white;
+  background: coral;
+  border-color: coral;
+}
+
+.appointment_form {
+  float: left;
+  height: 50vh;
+}
+
+.appointment_show {
+  float: left;
+  height: 50vh;
+  background: #f1f1f1;
+  padding-top: 7vh;
+  overflow-y: auto;
+}
+
+.appointment_view_header{
+  float: left;
+  width: 100%;
+  background: #0b2775;
+  font-size: 0;
+  margin-bottom: 3px;
+  .header{
+    width: 33.3%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-right: 1px solid white;
+  }
+  .header:last-child{
+    border-right: 0;
+  }
+}
+
+.appointment_view_contents{
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  background: white;
+  font-size: 0;
+  
+  .content{
+    width: 33.3%;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-right: 1px solid #eaeaea;
+  }
+  .content:first-child{
+    color: #49c0cc;
+  }
+  .content:last-child{
+    border-right: 0;
+  }
+}

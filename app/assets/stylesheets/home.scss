@@ -1,0 +1,120 @@
+.login_default_style{
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  position: fixed;
+  margin-top: -9em;
+  margin-left: -15em;
+}
+
+.login_header{
+  text-align: center;
+  font-size: 30px;
+  width:100%;
+}
+
+.alternate_login{
+  text-align: center;
+  width:100%;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.new_user {
+  float: left;
+  width: 100%;
+}
+
+.login_textbox{
+  width: 100%;
+  padding: 5px;
+    font-size: 12px;
+}
+
+.login_fields{
+  padding-top: 15px;
+}
+
+.login_button{
+  width: 100%;
+}
+
+.sword{
+    height:6px;
+    width:100%;
+    display: inline-block;
+}
+
+.strike {
+  position: relative;
+}
+
+.strike:before {
+  content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+.or_span{
+  position: absolute;
+    margin-top: -8px;
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.home_class{
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  height: 75%;
+  top: 25%;
+}
+
+.home_class_headers{
+    float: left;
+    width: 100%;
+    text-align: center;
+    
+    span{
+      color: #0b2b75;
+      font-weight: bold;
+      margin-bottom: 14px;
+      display: inline-block;
+      border-bottom: 1px solid;
+    }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 767px) and (orientation: portrait)
+{
+  .login_page_main{width: 100%;left: 40%;}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 767px) and (orientation: landscape)
+{
+  .login_page_main{width: 70%;left: 50%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait)
+{
+  .login_page_main{width:60%;left: 45%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+{
+  .login_page_main{width: 55%;left: 50%;}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1351px)
+{
+  .login_page_main{width: 35%;left: 50%;}
+}
+
+@media only screen and (min-width: 1352px) and (max-width: 3200px)
+{
+  .login_page_main{width: 35%;left: 50%;}
+}

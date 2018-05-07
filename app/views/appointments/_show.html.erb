@@ -1,0 +1,18 @@
+<% @appointments = Appointment.all%>
+<%if @appointments%>
+	<div class="home_class_headers">
+		<span>APPOINTMENT VIEW</span>
+	</div>
+	<div class="appointment_view_header" style="">
+		<span class="header">Patient Name</span>
+		<span class="header">Doctor Name</span>
+		<span class="header">Disease</span>
+	</div>
+	<%@appointments.each do |appointment|%>
+		<div class="appointment_view_contents">
+			<span class="content"><%= appointment.doctor.name %></span>
+			<span class="content"><%= appointment.patient.name %></span>
+			<span class="content"><%= appointment.disease %></span>
+		</div>
+	<%end%>
+<%end%>

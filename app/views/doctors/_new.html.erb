@@ -1,0 +1,11 @@
+<%= form_with model: Doctor.new, remote:true do |form|%>
+	<div class="home_class">
+		<div class="home_class_headers">
+			<span>DOCTOR</span>
+		</div>
+  		<%= form.text_field :name, class: "form-control", placeholder: "Name" %>
+  		<%= form.text_field :phone_number, class: "form-control", placeholder: "Phone No." %>
+  		<%= form.text_field :specification, class: "form-control", placeholder: "Specification" %>
+  		<%= form.submit "Submit", :class=>"btn btn-warning" %>
+	</div>
+<%end%>

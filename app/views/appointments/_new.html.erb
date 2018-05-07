@@ -1,0 +1,11 @@
+<%= form_with model: Appointment.new, remote:true do |form|%>
+		<div class="home_class">
+			<div class="home_class_headers">
+				<span>APPOINTMENT</span>
+			</div>
+			<%= form.select(:doctor_id, Doctor.all.order(:id).collect {|doc| [ doc.name, doc.id ] }, prompt: "Select Doctor")%>
+	  		<%= form.select(:patient_id, Patient.all.order(:id).collect {|pt| [ pt.name, pt.id ] }, prompt: "Select Patient")%>
+	  		<%= form.text_field :disease, class: "form-control", placeholder: "Disease" %>
+	  		<%= form.submit "Submit", :class=>"btn btn-warning" %>
+  		</div>
+	<%end%>
